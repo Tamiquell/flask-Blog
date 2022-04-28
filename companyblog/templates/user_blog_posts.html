@@ -4,9 +4,9 @@
 
     <div class="container">
         <div class="jumbotron">
-            <h1>Welcome to the page for {{ current_user.username }}</h1>
+            <h1>Welcome to the page for {{ user.username }}</h1>
             <span class="img-container">
-                <img src="{{ url_for('static', filename='profile_pics/'+current_user.profile_image) }}"
+                <img src="{{ url_for('static', filename='profile_pics/'+user.profile_image) }}"
                  alt="profile picture" width="400" height="400">
             </span>
         </div>
